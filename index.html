@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>余桩 · Leftover Stakes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" width="960" height="540"></canvas>
+    <div id="overlay" class="overlay">
+      <div class="panel" id="title-panel">
+        <h1>余桩</h1>
+        <p class="sub">Leftover Stakes</p>
+        <p class="blurb">在有限空间里插桩挡怪——但桩也会堵住你自己。</p>
+        <ul class="hint-list">
+          <li><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动</li>
+          <li><kbd>空格</kbd> / 点击 朝面向方向插桩</li>
+          <li><kbd>R</kbd> 拔最近桩（约 1.2 秒敞口）</li>
+        </ul>
+        <button id="btn-start" type="button">开始</button>
+      </div>
+      <div class="panel hidden" id="death-panel">
+        <h1>倒下了</h1>
+        <p id="death-stats" class="blurb"></p>
+        <button id="btn-restart" type="button">再来一局</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
